@@ -116,8 +116,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
    TYPED TEXT IN HERO
 ============================================= */
 const phrases = [
-  'Front-end Developer',
-  'UI Designer',
+  'Full-Stack Developer',
+  'UI/UX Designer',
   'Creative Coder',
   'Experience Builder',
 ];
@@ -147,21 +147,24 @@ type();
 /* =============================================
    PROJECT CARD 3D TILT
 ============================================= */
-document.querySelectorAll('.tilt-card').forEach(card => {
+document.querySelectorAll('[data-tilt]').forEach(card => {
   card.addEventListener('mousemove', e => {
     const r    = card.getBoundingClientRect();
     const x    = e.clientX - r.left - r.width  / 2;
     const y    = e.clientY - r.top  - r.height / 2;
-    const rotX = (-y / r.height * 14).toFixed(2);
-    const rotY = ( x / r.width  * 14).toFixed(2);
-    card.style.transform = `perspective(600px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.03)`;
+    const rotX = (-y / r.height * 8).toFixed(2);
+    const rotY = ( x / r.width  * 8).toFixed(2);
+    card.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.015)`;
   });
   card.addEventListener('mouseleave', () => {
     card.style.transition = 'transform 0.5s ease';
-    card.style.transform  = 'perspective(600px) rotateX(0) rotateY(0) scale(1)';
+    card.style.transform  = 'perspective(800px) rotateX(0) rotateY(0) scale(1)';
     setTimeout(() => { card.style.transition = ''; }, 500);
   });
 });
+
+/* =============================================
+   PROJECT CARD CLICKABLE — handled by overlay anchor in markup
 
 /* =============================================
    MAGNETIC BUTTONS
