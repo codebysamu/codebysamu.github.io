@@ -194,9 +194,9 @@ document.querySelectorAll('.mag-btn').forEach(btn => {
 //    Template variables to include: {{from_name}}, {{from_email}}, {{message}}
 //    Set "To Email" in the template to: ksamtran@gmail.com
 // 4. Go to Account → API Keys → copy your Public Key below
-const EMAILJS_PUBLIC_KEY  = 'p2yV_LT7bWnDdaLjm';   // ← paste here
-const EMAILJS_SERVICE_ID  = 'service_42boygq';   // ← paste here
-const EMAILJS_TEMPLATE_ID = 'template_se4aq76';  // ← paste here
+const EMAILJS_PUBLIC_KEY  = 'CO11lyhpBuAD5Z0n0';   // ← paste here
+const EMAILJS_SERVICE_ID  = 'service_3b3gtuy';   // ← paste here
+const EMAILJS_TEMPLATE_ID = 'template_x1idfge';  // ← paste here
 
 emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 // ─────────────────────────────────────────────────────────────────────────────
