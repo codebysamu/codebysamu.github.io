@@ -40,7 +40,7 @@ http://localhost:5500
 
 This repo is set up as a user site:
 
-- Repository: `samktran/samktran.github.io`
+- Repository: `codebysamu/codebysamu.github.io`
 - Branch: `main`
 - Folder: `/ (root)`
 
@@ -60,7 +60,7 @@ Try:
 
 - Hard refresh: `Ctrl + F5`
 - Open in Incognito/Private mode
-- Use a cache-busting URL: `https://samktran.github.io/?v=timestamp`
+- Use a cache-busting URL: `https://codebysamu.github.io/?v=timestamp`
 - Wait up to ~10 minutes for CDN cache expiry
 
 ## Contact Form
